@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Ejercicio JS
+	</title>
+</head>
+<body>
+	<div id="prueba">
+		
+	</div>
+	
+	<button onclick="mostrarTexto();">Mostrar Texto</button>
+	<button onclick="cambiarColor();">Cambiar Color</button>
+
+
+	<div id="nombre" onmouseenter="fontSize();" onmouseleave="fontSizeLeave">
+		<h1>
+			Ricardo
+		</h1>
+	</div>
+
+	<input type="text" name="textoNombre">
+	<button onclick="totaAhogada('Buche', 'Negros' );">Mostrar resultados</button>
+	<script>
+		var prueba = document.getElementById('prueba')
+
+		function mostrarTexto(){
+		 prueba.innerHTML = 'Hola Mundo';
+		 prueba.style.backgroundColor = 'red';
+		 }	
+
+		function cambiarColor(){
+		 prueba.style.backgroundColor = 'blue';
+		}
+
+		function fontSize(){
+		 document.getElementById('nombre').style.fontSize = '40px';
+		}
+
+		function fontSizeLeave(){
+		 document.getElementById('nombre').style.fontSize = '20';
+		}
+	</script>
+
+</body>
+</html>
